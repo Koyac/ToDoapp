@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 # Create your models here.
 
@@ -12,8 +13,6 @@ class TodoModel(models.Model):
     )
     duedate = models.DateField()
     def __str__(self):
-<<<<<<< HEAD
-        return self.titlem
-=======
-        return self.titlem
->>>>>>> da6386698c765c6adc43569e0f1d9ab7088399e8
+        return self.title
+    def get_absolute_url(self):
+        return reverse('detail', kwargs={'pk':self.pk})

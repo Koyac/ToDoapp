@@ -7,13 +7,10 @@ from django.urls import reverse_lazy
 
 # Create your views here.
 
-<<<<<<< HEAD
 class Toplist(ListView):
     template_name = 'top.html'
     model = TodoModel
 
-=======
->>>>>>> da6386698c765c6adc43569e0f1d9ab7088399e8
 class TodoList(ListView):
     template_name = 'list.html'
     model = TodoModel
@@ -38,7 +35,6 @@ class TodoUpdate(UpdateView):
     template_name = 'update.html'
     model = TodoModel
     fields = ('title','memo','priority','duedate')
-<<<<<<< HEAD
     success_url = reverse_lazy('list')
 
 ##
@@ -48,8 +44,3 @@ class ToDoComment(CreateView):
     fields = ('title','memo','priority','duedate')
     uccess_url = reverse_lazy('list')
 
-    
-
-=======
-    success_url = reverse_lazy('list')
->>>>>>> da6386698c765c6adc43569e0f1d9ab7088399e8
