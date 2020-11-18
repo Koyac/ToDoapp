@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">ToDoListを作ろう！</h1>
+      <p class="lead">さあこれからやることをメモしよう！</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <center><a href="list" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true" style="width: 50%; padding: 15px; font-size:30px;">ToDoを書く</a></center>
+</div>
+{% endblock content %}
