@@ -8,7 +8,6 @@ urlpatterns = [
     path('create/',TodoCreate.as_view(), name='create'),
     path('delete/<int:pk>',TodoDelete.as_view(), name='delete'),
     path('update/<int:pk>',TodoUpdate.as_view(), name='update'),
-    #
     path('abc/', ToDoComment.as_view(), name='comment'),
 ]
 
